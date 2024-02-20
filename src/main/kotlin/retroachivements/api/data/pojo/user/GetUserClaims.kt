@@ -12,7 +12,7 @@ class GetUserClaims {
             @SerializedName("User")
             val user: String,
 
-            @SerializedName("GameId")
+            @SerializedName("GameID")
             val gameId: String,
 
             @SerializedName("GameTitle")

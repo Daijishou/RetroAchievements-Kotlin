@@ -18,7 +18,7 @@ class GetMostRecentTickets {
             @SerializedName("ID")
             val id: Long,
 
-            @SerializedName("AchievementId")
+            @SerializedName("AchievementID")
             val achievementId: Long,
 
             @SerializedName("AchievementType")
@@ -39,7 +39,7 @@ class GetMostRecentTickets {
             @SerializedName("AchievementAuthor")
             val achievementAuthor: String,
 
-            @SerializedName("GameId")
+            @SerializedName("GameID")
             val gameId: Long,
 
             @SerializedName("ConsoleName")

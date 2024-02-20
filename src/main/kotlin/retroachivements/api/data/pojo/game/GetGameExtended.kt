@@ -71,7 +71,7 @@ class GetGameExtended {
         @SerializedName("ConsoleName")
         val consoleName: String,
 
-        @SerializedName("ParentGameId")
+        @SerializedName("ParentGameID")
         val parentGameId: String,
 
         @SerializedName("NumDistinctPlayers")
@@ -140,7 +140,7 @@ class GetGameExtended {
             @SerializedName("User")
             val user: String,
 
-            @SerializedName("GameId")
+            @SerializedName("GameID")
             val gameId: String,
 
             @SerializedName("GameTitle")

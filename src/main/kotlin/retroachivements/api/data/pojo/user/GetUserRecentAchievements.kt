@@ -12,7 +12,7 @@ class GetUserRecentAchievements {
             @SerializedName("HardcoreMode")
             val hardcoreMode: Int,
 
-            @SerializedName("AchievementId")
+            @SerializedName("AchievementID")
             val achievementId: Long,
 
             @SerializedName("Title")
@@ -39,7 +39,7 @@ class GetUserRecentAchievements {
             @SerializedName("GameIcon")
             val gameIcon: String,
 
-            @SerializedName("GameId")
+            @SerializedName("GameID")
             val gameId: Long,
 
             @SerializedName("ConsoleName")

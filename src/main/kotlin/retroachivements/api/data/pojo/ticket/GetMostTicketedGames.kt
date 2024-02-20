@@ -12,7 +12,7 @@ class GetMostTicketedGames {
         val url: String
     ) {
         data class ReportedGame(
-            @SerializedName("GameId")
+            @SerializedName("GameID")
             val gameId: Long,
 
             @SerializedName("GameTitle")

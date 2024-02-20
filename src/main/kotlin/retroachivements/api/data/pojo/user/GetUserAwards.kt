@@ -48,7 +48,7 @@ class GetUserAwards {
             @SerializedName("Title")
             val title: String,
 
-            @SerializedName("ConsoleId")
+            @SerializedName("ConsoleID")
             val consoleId: Long,
 
             @SerializedName("ConsoleName")
