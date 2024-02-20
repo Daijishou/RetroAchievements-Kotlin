@@ -17,7 +17,7 @@ You can include jitpack in your pom.xml by using the following code:
 </repository>
 ```
 
-Then add this Metron Comics Client Library to your project!
+Then add this RetroAchievements Library to your project!
 
 ```xml
 <dependency>
