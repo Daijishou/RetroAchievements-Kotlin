@@ -2,7 +2,7 @@ package retroachivements.api.core
 
 import com.google.gson.GsonBuilder
 import com.haroldadmin.cnradapter.NetworkResponseAdapterFactory
-import com.sun.org.slf4j.internal.LoggerFactory
+
 import retroachivements.api.data.RetroCredentials
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -33,8 +33,4 @@ open class CoreClient(credentials: RetroCredentials, baseUrl: String, debugging:
         .baseUrl(baseUrl)
         .client(httpClient)
         .build()
-
-    companion object {
-        val logger = LoggerFactory.getLogger(CoreClient::class.java)
-    }
 }
