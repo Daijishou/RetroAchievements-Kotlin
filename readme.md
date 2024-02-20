@@ -21,7 +21,7 @@ Then add this Metron Comics Client Library to your project!
 
 ```xml
 <dependency>
-    <groupId>...</groupId>
+    <groupId>com.github.Daijishou</groupId>
     <artifactId>RetroAchievements-kotlin</artifactId>
     <version>1.0.0</version>
 </dependency>
