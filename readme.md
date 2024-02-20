@@ -64,19 +64,19 @@ val credentials: RetroCredentials = RetroCredentials("<username>", "<Web API Key
 val client: RetroClient = RetroClient(credentials)
 
 // api access
-val api = client.api
+val api: RetroInterface = client.api
 
-val response = api.getGame(14402)
+val response: NetworkResponse<GetGame.Response, ErrorResponse> = api.getGame(14402)
 if (response is NetworkResponse.Success) {
     // do as you wish with the response body, it'll be parsed into the appropriate pojo object
-    val body = response.body
+    val body: GetGame.Response = response.body
 
 } else if (response is NetworkResponse.Error) {
     // if the server returns an error it be found here
-    val errorResponse = response.body
+    val errorResponse: ErrorResponse? = response.body
 
     // if the api (locally) had an internal error, it'll be found here
-    val internalError = response.error
+    val internalError: Throwable? = response.error
 }
 ```
 ## Special Thanks
