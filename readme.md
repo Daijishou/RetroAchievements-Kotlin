@@ -79,3 +79,5 @@ if (response is NetworkResponse.Success) {
     val internalError = response.error
 }
 ```
+## Special Thanks
+Special thanks to [@official-wizard](https://www.github.com/official-wizard) who generously created this beautiful library for Daijishou.
