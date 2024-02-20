@@ -6,7 +6,6 @@ import com.sun.org.slf4j.internal.LoggerFactory
 import retroachivements.api.data.RetroCredentials
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import retroachivements.api.core.DateFormatAdapterFactory
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
