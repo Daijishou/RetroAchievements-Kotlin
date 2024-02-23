@@ -11,8 +11,12 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 
 open class CoreClient(credentials: RetroCredentials, baseUrl: String, debugging: Boolean = false) {
+    private val gson = GsonBuilder()
+        .registerTypeAdapterFactory(DateFormatAdapterFactory())
+        .create()
+
     // custom [OkHttpClient] client to add an authentication interceptor
-    private var httpClient: OkHttpClient = OkHttpClient.Builder().apply {
+    var httpClient: OkHttpClient = OkHttpClient.Builder().apply {
         addInterceptor(AuthenticatorInterceptor(credentials))
 
         if (debugging) {
@@ -22,12 +26,8 @@ open class CoreClient(credentials: RetroCredentials, baseUrl: String, debugging:
         }
     }.build()
 
-    private val gson = GsonBuilder()
-        .registerTypeAdapterFactory(DateFormatAdapterFactory())
-        .create()
-
     // custom [Retrofit] client to add custom [OkHttpClient] and add Gson (JSON) support
-    protected val retroClient: Retrofit = Retrofit.Builder()
+    val retroClient: Retrofit = Retrofit.Builder()
         .addConverterFactory(GsonConverterFactory.create(gson))
         .addCallAdapterFactory(NetworkResponseAdapterFactory())
         .baseUrl(baseUrl)
