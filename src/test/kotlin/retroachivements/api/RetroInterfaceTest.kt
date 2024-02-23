@@ -138,8 +138,6 @@ class RetroInterfaceTest {
                 gameId = 14402
             )
 
-            (getGameInfoAndUserProgress as NetworkResponse.Error).error?.printStackTrace()
-
             assert(getGameInfoAndUserProgress is NetworkResponse.Success)
 
             assertNotNull((getGameInfoAndUserProgress as NetworkResponse.Success).body)
